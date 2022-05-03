@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music player</title>
+  <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/png;base64,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"type="image/x-icon" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+
+<body>
+  <!-- <button class="btn-toggle-play">Bắt đầu</button> -->
+    <a href="#footer" class="runnow"><i class="ti-arrow-down"></i></a>
+  <div class="player">
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <!-- Header -->
+      <header>
+        <h4><i class="ti-music-alt">&ensp;</i>Leebask đang phát:</i></h4>
+        <h2>leebask</h2>
+      </header>
+
+      <!-- CD -->
+      <div class="cd">
+        <div class="cd-thumb"
+          style="background-image: url('https://scontent.fsgn5-15.fna.fbcdn.net/v/t1.6435-9/69989009_2521099201493432_5795506999525376000_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=174925&_nc_ohc=aAfmSJ4KgMEAX_ToVxS&_nc_ht=scontent.fsgn5-15.fna&oh=00_AT-lY_oQvBMMx3BcoUGsSoHY78jJFHY7sIpN8dVspqD83g&oe=6271CFDA')">
+        </div>
+      </div>
+
+      <!-- Control -->
+      <div class="control">
+        <div class="btn btn-repeat">
+          <i class="fas fa-redo"></i>
+        </div>
+        <div class="btn btn-prev">
+          <i class="fas fa-step-backward"></i>
+        </div>
+        <div class="btn btn-toggle-play">
+          <i class="fas fa-pause icon-pause"></i>
+          <i class="fas fa-play icon-play"></i>
+        </div>
+        <div class="btn btn-next">
+          <i class="fas fa-step-forward"></i>
+        </div>
+        <div class="btn btn-random">
+          <i class="fas fa-random"></i>
+        </div>
+      </div>
+
+      <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+      <audio id="audio" src="http://api.mp3.zing.vn/api/streaming/audio/ZZ9OIWA0/3200"></audio>
+    </div>
+    <!-- Playlist -->
+    <div  class="playlist">
+      <!-- <div class="song">
+       <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+      </div>
+      <div class="body">
+        <h3 class="title">Music name</h3>
+        <p class="author">Singer</p>
+      </div>
+      <div class="option">
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+    </div> -->
+      <!-- <div class="song">
+      <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+      </div>
+      <div class="body">
+        <h3 class="title">Music name</h3>
+        <p class="author">Singer</p>
+      </div>  -->
+      <!-- <div class="option">
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+    </div>
+    <div class="song">
+      <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+      </div>
+      <div class="body">
+        <h3 class="title">Music name</h3>
+        <p class="author">Singer</p>
+      </div>
+      <div class="option">
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+    </div> -->
+    </div>
+  </div>
+  <div id="footer">
+    <div class="text-contact-line icon-social">
+      <a href="https://www.facebook.com/Leebask.KP" class=""><i class="ti-facebook "></i></a>
+      <a href="https://www.instagram.com/leebask.kp/" class=""><i class="ti-instagram "></i></a>
+      <a href="https://github.com/leebask" class=""><i class="ti-github "></i></a>
+    </div>
+    <p class="copyright">Powered by<a class="" href="https://www.facebook.com/Leebask.KP/">Lê Khánh</a></p>
+  </div>
+  <ul id="post-block">
+
+  </ul>
+  <script type="text/javascript" src="./assets/js/musicplayer.js" crossorigin="anonymous"></script>
+  <script>
+
+  </script>
+
+</body>
+
+</html>
